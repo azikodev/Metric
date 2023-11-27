@@ -95,6 +95,9 @@ ol {
     justify-content: space-between;
     padding: 28px 0;
 }
+.nav-bgc {
+    background-color: var(--black);
+}
 
 .nav__list {
     display: flex;
@@ -103,12 +106,45 @@ ol {
 }
 
 .nav-list__item {
-    color: var(--color-222);
+    color: var(--white);
     font-family: var(--main-font);
     font-size: var(--font-16);
     font-style: normal;
     font-weight: var(--weight-400);
     line-height: 22px;
+    position: relative;
+}
+.nav-list__item a:hover {
+
+}
+.nav-list__item a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s linear;
+    visibility: hidden;
+}
+.nav-list__item a:hover::after {
+    width: 100%;
+    visibility: visible;
+}
+.nav-list__item a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    transition: width 0.3s ;
+}
+.nav-list__item a:hover::before {
+    width: 100%;
+    visibility:hidden
 }
 
 .header-wrapper {}
@@ -171,16 +207,17 @@ ol {
 .header__btn1:hover {
     color: var(--black);
     background-color: var(--white);
+    transition: all 1s ease;
 }
 
 .header__btn2 {
     color: var(--black);
-    background-color: var(--white);
+    background-color: transparent;
 }
 
 .header__btn2:hover {
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--black);
+    background-color: var(--white);
 }
 
 .header-bottom {
@@ -649,7 +686,11 @@ ol {
     height: 17px;
 }
 
-.footer__logo-section img:hover {}
+
+.footer__logo-section img:hover {
+    position: relative;
+    bottom: 4px;
+}
 
 .sign-up__btn a {
     border-radius: 0px 2px 2px 0px;
@@ -663,6 +704,7 @@ ol {
     /* border: 1px solid var(--black); */
     background-color: #A1BFD4;
     color: var(--black);
+    transition: all 0.2s;
 }
 
 .footer__list {
@@ -693,6 +735,11 @@ ol {
     margin-bottom: 2px;
 }
 
+.footer-item__text:hover a {
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+}
+
 .footer-bottom__text {
     color: var(--color-footer);
     font-family: var(--main-font);
@@ -702,3 +749,4 @@ ol {
     line-height: 22px;
 
 }
+.
