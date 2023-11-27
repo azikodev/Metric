@@ -6,7 +6,6 @@
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
-    tet
 }
 
 /* roboto-slab-regular - latin */
@@ -42,6 +41,7 @@
     --font-14: 14px;
     --font-15: 15px;
     --font-16: 16px;
+    --font-17: 17px;
     --font-19: 19px;
     --font-20: 20px;
     --font-21: 21px;
@@ -596,6 +596,7 @@ ol {
     display: flex;
     justify-content: space-between;
 }
+
 .footer-top {
     background-color: #2B2C2E;
     padding: 42px 0;
@@ -636,11 +637,19 @@ ol {
     font-size: var(--font-19);
     width: 193px;
 }
+
 .footer__logo-section {
     display: flex;
     align-items: center;
     gap: 12px;
 }
+
+.footer__logo-section img {
+    width: 17px;
+    height: 17px;
+}
+
+.footer__logo-section img:hover {}
 
 .sign-up__btn a {
     border-radius: 0px 2px 2px 0px;
@@ -649,12 +658,47 @@ ol {
     padding: 4.2px 37.2px;
     color: var(--white)
 }
+
 .sign-up__btn a:hover {
     /* border: 1px solid var(--black); */
     background-color: #A1BFD4;
-    color: var(--black);    
+    color: var(--black);
 }
+
 .footer__list {
     display: flex;
     gap: 86px;
+}
+
+.footer-list__item {}
+
+.footer-item__title {
+    color: #E4E8EB;
+    font-family: var(--font-3);
+    font-size: var(--font-17);
+    font-style: normal;
+    font-weight: var(--weight-400);
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-item__text a {
+    color: var(--color-footer);
+    font-family: var(--main-font);
+    font-size: var(--font-15);
+    font-style: normal;
+    font-weight: var(--weight-400);
+    line-height: 22px;
+    margin-bottom: 2px;
+}
+
+.footer-bottom__text {
+    color: var(--color-footer);
+    font-family: var(--main-font);
+    font-size: var(--font-14);
+    font-style: normal;
+    font-weight: var(--weight-400);
+    line-height: 22px;
+
 }
