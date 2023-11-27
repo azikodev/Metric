@@ -6,6 +6,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+    tet
 }
 
 /* roboto-slab-regular - latin */
@@ -36,6 +37,8 @@
     --color-222: #222;
     --color-333: #333;
     --color-2b2b2b: #2B2B2B;
+    --color-footer: #939596;
+    --color-ftitle: #E4E8EB;
     --font-14: 14px;
     --font-15: 15px;
     --font-16: 16px;
@@ -483,9 +486,11 @@ ol {
 .simples {
     color: #C7C5C5;
 }
+
 .feature-item-bottom p:nth-child(4) {
     margin-bottom: 26px;
 }
+
 .item-bottom__btn {
     background-color: var(--black);
     border: 1px solid transparent;
@@ -500,11 +505,13 @@ ol {
     line-height: 22px;
     padding: 10px 48px;
 }
+
 .item-bottom__btn:hover {
     background-color: var(--white);
     color: var(--black);
     border: 1px solid var(--black);
 }
+
 .feature__subtext {
     color: var(--color-333);
     text-align: center;
@@ -514,14 +521,15 @@ ol {
     font-weight: var(--weight-400);
     line-height: 22px;
 }
+
 .feature__subtext span {
     color: #489FD9;
     font-size: var(--font-15);
 }
-/* customer section styles */
-.customer-section {
 
-}
+/* customer section styles */
+.customer-section {}
+
 .customer-top {
     padding: 70px 0;
     display: flex;
@@ -529,6 +537,7 @@ ol {
     flex-direction: column;
     align-items: center;
 }
+
 .customer__title {
     color: var(--color-333);
     text-align: center;
@@ -539,6 +548,7 @@ ol {
     line-height: 36px;
     margin-bottom: 45px;
 }
+
 .customer__text {
     color: var(--color-333);
     text-align: center;
@@ -549,11 +559,13 @@ ol {
     line-height: 31px;
     margin-bottom: 22px;
 }
+
 .customer-top img {
     width: 70px;
-    height: 70px;  
-    margin-bottom: 12px; 
+    height: 70px;
+    margin-bottom: 12px;
 }
+
 .avatar-name {
     color: var(--color-333);
     text-align: center;
@@ -563,6 +575,7 @@ ol {
     font-weight: var(--weight-400);
     line-height: 22px;
 }
+
 .avatar__text {
     color: var(--color-333);
     text-align: center;
@@ -572,8 +585,76 @@ ol {
     font-weight: var(--weight-400);
     line-height: 22px;
 }
+
 .customer-bottom {
     background-color: #A1BFD4;
     padding: 20px 0;
 }
 
+/* footer section styles */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top {
+    background-color: #2B2C2E;
+    padding: 42px 0;
+}
+
+.footer__logo {
+    width: 84px;
+    height: 22px;
+    cursor: pointer;
+    margin-bottom: 26px;
+}
+
+.footer-bottom {
+    background-color: #1C1D1F;
+    padding: 20px 0;
+}
+
+.sign-up__text {
+    color: var(--color-footer);
+    font-family: var(--main-font);
+    font-size: var(--font-15);
+    font-style: normal;
+    font-weight: var(--weight-400);
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+
+.sign-up__btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--white);
+    width: 322px;
+    margin-bottom: 22px;
+}
+
+.sign-up__btn form input {
+    outline: none;
+    font-size: var(--font-19);
+    width: 193px;
+}
+.footer__logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sign-up__btn a {
+    border-radius: 0px 2px 2px 0px;
+    background: var(--black);
+    /* border: 1px solid transparent; */
+    padding: 4.2px 37.2px;
+    color: var(--white)
+}
+.sign-up__btn a:hover {
+    /* border: 1px solid var(--black); */
+    background-color: #A1BFD4;
+    color: var(--black);    
+}
+.footer__list {
+    display: flex;
+    gap: 86px;
+}
