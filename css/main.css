@@ -95,6 +95,7 @@ ol {
     justify-content: space-between;
     padding: 28px 0;
 }
+
 .nav-bgc {
     background-color: var(--black);
 }
@@ -114,9 +115,9 @@ ol {
     line-height: 22px;
     position: relative;
 }
-.nav-list__item a:hover {
 
-}
+.nav-list__item a:hover {}
+
 .nav-list__item a::after {
     content: '';
     width: 0%;
@@ -128,10 +129,12 @@ ol {
     transition: width 0.3s linear;
     visibility: hidden;
 }
+
 .nav-list__item a:hover::after {
     width: 100%;
     visibility: visible;
 }
+
 .nav-list__item a::before {
     content: '';
     width: 0%;
@@ -140,11 +143,12 @@ ol {
     position: absolute;
     bottom: -2px;
     right: 0;
-    transition: width 0.3s ;
+    transition: width 0.3s;
 }
+
 .nav-list__item a:hover::before {
     width: 100%;
-    visibility:hidden
+    visibility: hidden
 }
 
 .header-wrapper {}
@@ -749,4 +753,3 @@ ol {
     line-height: 22px;
 
 }
-.
